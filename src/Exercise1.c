@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	}
 	if(2.25<=n && n<=30)
 	{
-		cost=(base+(n/0.25)*2000);
+		cost=(base+((n-2)/0.25)*2000);
 	}
 	if (n>30)
 	{
