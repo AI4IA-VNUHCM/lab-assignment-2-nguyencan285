@@ -10,7 +10,7 @@ Ex:
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-void Tang(int A[], int n)
+void tang(int A[], int n)
 {
 	for (int i = 0; i < n / 2 - 1; i++)
 		for (int j = i + 1; j < n / 2; j++)
@@ -22,7 +22,7 @@ void Tang(int A[], int n)
 				A[j] = temp;
 			}
 }
-void Giam(int A[], int n)
+void giam(int A[], int n)
 {
 	for (int i = n / 2; i < n - 1; i++)
 		for (int j = i + 1; j < n; j++)
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
 		test_array[i] = atoi(argv[i + 1]);
 	}
 	//Your codes here
-	Giam(test_array, n);
+	tang(test_array, n);
 	for (int i = 0; i < n / 2; i++)
 	{
 		printf(" %d", test_array[i]);
 	}
-	Tang(test_array, n);
+	giam(test_array, n);
 	for (int i = n / 2; i < n; i++)
 	{
 		printf(" %d", test_array[i]);
