@@ -16,10 +16,31 @@ ______________________________________
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int n = atoi(argv[1]);
-	int result;
-	//Your codes here
-	
-	printf("%d", result);
+	int a = atoi(argv[1]);
+    int res = 1;
+    if(a % 2 !=0)
+    {
+        
+        for(int i =2; i<=a; i++)
+        {
+            if (i%2 !=0)
+            {
+                res
+				=res*i;
+            }
+        }
+    }
+    if(a % 2 ==0)
+    {
+        for(int i = 2;i<=sqrt(a);i++)
+        {
+            if (i % 2 ==0)
+            {
+                res=res*i;
+            }
+        }
+    }
+    printf("%d",res);
+	//printf("%d", result);
 	return 0;
 }
