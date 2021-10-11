@@ -14,33 +14,34 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
+
 int main(int argc, char *argv[]) {
+
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int a = atoi(argv[1]);
-    int res = 1;
-    if(a % 2 !=0)
+	int testcase = atoi(argv[1]);
+    int result = 1;
+    
+    if(testcase % 2 !=0)
     {
-        
-        for(int i =2; i<=a; i++)
+        for(int i =2; i<=testcase; i++)
         {
-            if (i%2 !=0)
+            if (i%2 != 0)
             {
-                res
-				=res*i;
+                
+				result*=i;
             }
         }
     }
-    if(a % 2 ==0)
+    if(testcase % 2 ==0)
     {
-        for(int i = 2;i<=sqrt(a);i++)
+      for(int i = 2;i<=testcase;i++)
         {
-            if (i % 2 ==0)
-            {
-                res=res*i;
-            }
-        }
-    }
-    printf("%d",res);
-	//printf("%d", result);
+  if (i % 2 ==0)
+           {
+            result*=i;
+           }
+       }
+}
+   printf("%d",result);
 	return 0;
 }
